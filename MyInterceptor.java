@@ -109,7 +109,7 @@ public final class MyInterceptor implements Interceptor {
             RequestBody body2 = request.body();
             MediaType contentType = body2 != null ? body2.contentType() : null;
             if (contentType != null) {
-                // 追加编码名
+                // 追加请求体
                 sb.append(buffer.readString(contentType.charset(charset)));
             }
         }
